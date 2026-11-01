@@ -5,12 +5,16 @@ Take a folder of font files and generate a vector embedding for each file.
 ## Usage
 
 ```sh
-fontvec path/to/fonts
+# Recommended
+uv run fontvec path/to/font
+
+# For font images
+uv run fontvec path/to/font --save-images path/to/image
 ```
 
 ## Fonts
 
-The sample fonts in [`fonts/`](fonts/) come from [Google Fonts](https://fonts.google.com/).
+The sample fonts in [`tests/fonts/`](tests/fonts/) come from [Google Fonts](https://fonts.google.com/).
 They are included for testing and are **not** covered by this project's MIT
 license.
 
